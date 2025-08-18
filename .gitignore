@@ -4,6 +4,7 @@
 # Bancos de Memória
 /memory-bank
 /src/pages/*/memory-bank
+
 # Arquivos de Build
 /dist
 /.vite
