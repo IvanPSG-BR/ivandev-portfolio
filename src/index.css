@@ -1,1 +1,12 @@
 @import "tailwindcss";
+@import "./assets/css/About.css";
+@import "./assets/css/Contact.css";
+@import "./assets/css/Footer.css";
+@import "./assets/css/Header.css";
+@import "./assets/css/Hero.css";
+@import "./assets/css/Projects.css";
+
+body {
+    background-color: #06090e;
+    color: #eeede6;
+}

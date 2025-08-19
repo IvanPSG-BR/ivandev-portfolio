@@ -23,21 +23,9 @@ Este é um Single Page Application (SPA) construído com React e TypeScript, pro
 
 A aplicação segue uma arquitetura baseada em componentes, com uma clara separação de responsabilidades:
 
-- **`src/pages`**: Contém os componentes de cada página principal (Home, About, Contact, Pokefolio).
-- **`src/components`**: Contém componentes reutilizáveis (Button, Card, etc.).
+- **`src/projectsages`**: Contém as páginas de cada projeto.
+- **`src/components`**: Contém componentes reutilizáveis (Button, ProjectCard, etc.).
 - **`src/layouts`**: Contém os componentes de layout que estruturam as páginas.
-
-## 🌟 Projeto em Destaque: Pokefolio
-
-Dentro deste portfólio, há um projeto especial chamado **Pokefolio**.
-
-### O que é o Pokefolio?
-
-O Pokefolio é uma seção do portfólio com tema de Pokémon para exibir projetos de uma forma criativa e memorável. A interface é baseada na tela de "Party" (time) de Pokémon, onde cada projeto é representado como um "pokémon".
-
-- **Tecnologias do Pokefolio:**
-  - **Estilização:** Styled-Components e Tailwind CSS
-  - **Áudio:** Biblioteca de efeitos sonoros para interatividade.
 
 ## ⚙️ Como Executar o Projeto
 
