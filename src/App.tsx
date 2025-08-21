@@ -1,5 +1,9 @@
 import React from 'react';
 import Header from './layouts/Header';
+import Hero from './layouts/Hero';
+// import About from './layouts/About';
+// import Projects from './layouts/Projects';
+// import Contact from './layouts/Contact';
 import Footer from './layouts/Footer';
 import foto_profissional from './assets/images/ivan-a-trabalho.png';
 
@@ -8,8 +12,7 @@ export default function App() {
         <>
             <Header></Header>
             <main className="flex flex-col gap-4 py-10">
-                <h2>[Conteúto principal]</h2>
-                <img src={foto_profissional} alt="" className="w-[10rem] rounded-full"/>
+                <Hero></Hero>
             </main>
             <Footer></Footer>
         </>
