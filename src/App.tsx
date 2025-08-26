@@ -5,7 +5,6 @@ import Hero from './layouts/Hero';
 // import Projects from './layouts/Projects';
 // import Contact from './layouts/Contact';
 import Footer from './layouts/Footer';
-import foto_profissional from './assets/images/ivan-a-trabalho.png';
 
 export default function App() {
     return (

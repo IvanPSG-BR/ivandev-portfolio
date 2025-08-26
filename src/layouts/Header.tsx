@@ -1,8 +1,16 @@
 import React from 'react';
 import { FaLightbulb } from "react-icons/fa";
 import logomarca from '../assets/images/logomarca-pessoal-melhorada.png';
+import { DefaultLink } from '../utils/Types';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
+    const fields: Array<DefaultLink> = [
+        {Link: "/", Txt: "Sobre"},
+        {Link: "/", Txt: "Projetos"},
+        {Link: "/", Txt: "Contato"}
+    ]
+
     return (
         <header>
             <nav>
@@ -22,9 +30,13 @@ export default function Header() {
 
                 <div id="right_nav">
                     <ul id="nav_options">
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Projetos</a></li>
-                        <li><a href="">Contato</a></li>
+                        {fields.map(
+                            ({ Link, Txt }, i) => (
+                                <li>
+                                    <a href={Link}>{Txt}</a>
+                                </li>
+                            )
+                        )}
                     </ul>
                     <div id="theme_switch">
                         <button><FaLightbulb></FaLightbulb></button>

@@ -1,7 +1,11 @@
 import React from 'react';
 import my_photo from '../assets/images/ivan-a-trabalho.png';
+import { SiPython, SiPhp, SiMysql, SiHtml5, SiCss3, SiTypescript, SiGit } from "react-icons/si";
+import { TbAutomation } from "react-icons/tb";
+import { IconType } from 'react-icons';
 
 export default function Hero() {
+    const badges: Array<IconType> = [SiPython, SiPhp, SiMysql, SiHtml5, SiCss3, SiTypescript, SiGit, TbAutomation]
     return (
         <section>
             <div id="hero_main">
@@ -18,14 +22,11 @@ export default function Hero() {
             </div>
 
             <div id="badges">
-                <div className="badge"><img src="" alt="" /></div>
-                <div className="badge"><img src="" alt="" /></div>
-                <div className="badge"><img src="" alt="" /></div>
-                <div className="badge"><img src="" alt="" /></div>
-                <div className="badge"><img src="" alt="" /></div>
-                <div className="badge"><img src="" alt="" /></div>
-                <div className="badge"><img src="" alt="" /></div>
-                <div className="badge"><img src="" alt="" /></div>
+                {badges.map(
+                    (Icon, i) => (
+                        <div className="badge"><Icon></Icon></div>
+                    )
+                )}
             </div>
 
             <div id="cta">
