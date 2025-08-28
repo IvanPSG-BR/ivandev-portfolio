@@ -1,0 +1,17 @@
+footer{
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 12.5vh;
+    padding-inline: 2rem;
+}
+
+#left_ftr > ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.brand{
+    font-size: larger;
+}

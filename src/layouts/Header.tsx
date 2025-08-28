@@ -2,18 +2,17 @@ import React from 'react';
 import { FaLightbulb } from "react-icons/fa";
 import logomarca from '../assets/images/logomarca-pessoal-melhorada.png';
 import { DefaultLink } from '../utils/Types';
-import { Link } from 'react-router-dom';
 
 export default function Header() {
     const fields: Array<DefaultLink> = [
         {Link: "/", Txt: "Sobre"},
         {Link: "/", Txt: "Projetos"},
         {Link: "/", Txt: "Contato"}
-    ]
+    ];
 
     return (
         <header>
-            <nav>
+            <nav className="flex justify-between">
                 <div id="left_nav">
                     <a href="/">
                         <div id="logomark">
@@ -37,10 +36,8 @@ export default function Header() {
                                 </li>
                             )
                         )}
+                        <li><button id="theme_switch"><FaLightbulb></FaLightbulb></button></li>
                     </ul>
-                    <div id="theme_switch">
-                        <button><FaLightbulb></FaLightbulb></button>
-                    </div>
                 </div>
             </nav>
         </header>

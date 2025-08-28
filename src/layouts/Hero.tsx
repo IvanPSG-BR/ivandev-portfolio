@@ -5,9 +5,10 @@ import { TbAutomation } from "react-icons/tb";
 import { IconType } from 'react-icons';
 
 export default function Hero() {
-    const badges: Array<IconType> = [SiPython, SiPhp, SiMysql, SiHtml5, SiCss3, SiTypescript, SiGit, TbAutomation]
+    const badges: Array<IconType> = [SiPython, SiPhp, SiMysql, SiHtml5, SiCss3, SiTypescript, SiGit, TbAutomation];
+
     return (
-        <section>
+        <section className="flex flex-col justify-center items-center gap-[2.5rem]">
             <div id="hero_main">
                 <div id="hero_photo">
                     <img src={my_photo} alt="" className="w-[10rem] rounded-full"/>
@@ -16,7 +17,11 @@ export default function Hero() {
                 <div id="hero_text">
                     <div id="hero_title"><h2>Ivan_Pedro() {"{"}</h2></div>
                     <div id="hero_subtitle"><h3>Junior Backend Developer;</h3></div>
-                    <div id="hero_paragraph"><p>APIs e automações em Python/PHP que economizam tempo;</p></div>
+                    <div id="hero_paragraph">
+                        <p>APIs polidas em Python + FastAPI || PHP + Symphony;</p>
+                        <p>Automações em Python que economizam tempo;</p>
+                        <p>Websites com TypeScript customizados para VOCÊ;</p>
+                    </div>
                     <div id="hero_title_close"><h2>{"}"}</h2></div>
                 </div>
             </div>

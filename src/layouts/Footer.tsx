@@ -11,18 +11,18 @@ export default function Footer() {
     ]
 
     return (
-        <footer>
+        <footer className="flex">
             <div id="left_ftr">
                 <ul>
                     {brands.map(
                         ({ Link, Icon }, i) => (
-                            <li className="w-[1rem] h-[1rem]">
+                            <li className="brand w-[1rem] h-[1rem]">
                                 <a href={Link}><Icon></Icon></a>
                             </li>
                         )
                     )}
-                    <li className="w-[1rem] h-[1rem]">
-                        <a href=""><img src={workana_icon} alt="" className="w-[1rem] h-[1rem]"/></a>
+                    <li>
+                        <a href=""><img src={workana_icon} alt="" className="w-[1.2rem] h-[auto]"/></a>
                     </li>
                 </ul>
             </div>
