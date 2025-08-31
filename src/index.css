@@ -11,6 +11,12 @@ body {
     color: #eeede6;
 }
 
+a, button{
+    cursor: pointer;
+}
+
 section{
+    display: flex;
+    flex-direction: column;
     height: 87.5vh;
 }

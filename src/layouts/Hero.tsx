@@ -2,13 +2,22 @@ import React from 'react';
 import my_photo from '../assets/images/ivan-a-trabalho.png';
 import { SiPython, SiPhp, SiMysql, SiHtml5, SiCss3, SiTypescript, SiGit } from "react-icons/si";
 import { TbAutomation } from "react-icons/tb";
-import { IconType } from 'react-icons';
+import { IconText } from '../utils/Types';
 
 export default function Hero() {
-    const badges: Array<IconType> = [SiPython, SiPhp, SiMysql, SiHtml5, SiCss3, SiTypescript, SiGit, TbAutomation];
+    const badges: Array<IconText> = [
+        {id: 0, Icon: SiPython, Txt: "python"},
+        {id: 1, Icon: SiPhp, Txt: "php"},
+        {id: 2, Icon: SiMysql, Txt: "mysql"},
+        {id: 3, Icon: SiHtml5, Txt: "html"},
+        {id: 4, Icon: SiCss3, Txt: "css"},
+        {id: 5, Icon: SiTypescript, Txt: "typescript"},
+        {id: 6, Icon: SiGit, Txt: "git"},
+        {id: 7, Icon: TbAutomation, Txt: "automation"},
+    ];
 
     return (
-        <section className="flex flex-col justify-center items-center gap-[2.5rem]">
+        <section id="Hero" className="justify-center items-center gap-[3rem]">
             <div id="hero_main">
                 <div id="hero_photo">
                     <img src={my_photo} alt="" className="w-[10rem] rounded-full"/>
@@ -28,21 +37,21 @@ export default function Hero() {
 
             <div id="badges">
                 {badges.map(
-                    (Icon, i) => (
-                        <div className="badge"><Icon></Icon></div>
+                    (badge) => (
+                        <div key={badge.id} className={"badge " + badge.Txt}><badge.Icon></badge.Icon></div>
                     )
                 )}
             </div>
 
             <div id="cta">
                 <div id="download_curriculum">
-                    <a href="">
+                    <a href="/CURRICULO_IVAN_PEDRO.pdf">
                         <button>Baixar_Currículo();</button>
                     </a>
                 </div>
 
                 <div id="make_contact">
-                    <a href="">
+                    <a href="#Footer"> {/* PLACEHOLDER */}
                         <button>Entrar_em_Contato();</button>
                     </a>
                 </div>

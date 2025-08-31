@@ -1,17 +1,16 @@
 import React from 'react';
 import { FaLightbulb } from "react-icons/fa";
 import logomarca from '../assets/images/logomarca-pessoal-melhorada.png';
-import { DefaultLink } from '../utils/Types';
 
 export default function Header() {
-    const fields: Array<DefaultLink> = [
-        {Link: "/", Txt: "Sobre"},
-        {Link: "/", Txt: "Projetos"},
-        {Link: "/", Txt: "Contato"}
+    const fields: Array<Array<string>> = [
+        ["/", "Sobre"],
+        ["/", "Projetos"],
+        ["/", "Contato"]
     ];
 
     return (
-        <header>
+        <header id="Header">
             <nav className="flex justify-between">
                 <div id="left_nav">
                     <a href="/">
@@ -30,7 +29,7 @@ export default function Header() {
                 <div id="right_nav">
                     <ul id="nav_options">
                         {fields.map(
-                            ({ Link, Txt }, i) => (
+                            ([Link, Txt]) => (
                                 <li>
                                     <a href={Link}>{Txt}</a>
                                 </li>

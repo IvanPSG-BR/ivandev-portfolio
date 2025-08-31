@@ -1,11 +1,7 @@
 import { IconType } from 'react-icons';
 
-export type DefaultLink = {
-    Link: string;
+export type IconText = {
+    id: number;
+    Icon: IconType;
     Txt: string;
 }
-
-export type IconLink = {
-    Link: string;
-    Icon: IconType;
-};
