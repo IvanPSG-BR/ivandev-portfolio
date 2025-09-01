@@ -17,44 +17,40 @@ export default function Hero() {
     ];
 
     return (
-        <section id="Hero" className="justify-center items-center gap-[3rem]">
-            <div id="hero_main">
+        <section id="Hero" className="justify-center items-center gap-8">
+            <div id="hero_main" className="flex flex-col items-center gap-4">
                 <div id="hero_photo">
-                    <img src={my_photo} alt="" className="w-[10rem] rounded-full"/>
+                    <img src={my_photo} alt="" className="w-50 rounded-full"/>
                 </div>
 
-                <div id="hero_text">
-                    <div id="hero_title"><h2>Ivan_Pedro() {"{"}</h2></div>
-                    <div id="hero_subtitle"><h3>Junior Backend Developer;</h3></div>
-                    <div id="hero_paragraph">
+                <div id="hero_text" className="flex flex-col gap-1 px-4">
+                    <h2 className="text-4xl">Ivan_Pedro() {"{"}</h2>
+                    <div id="hero_paragraph" className="flex flex-col text-sm gap-2 px-6">
+                        <h3 className="text-xl pb-4">Junior Backend Developer;</h3>
                         <p>APIs polidas em Python + FastAPI || PHP + Symphony;</p>
                         <p>Automações em Python que economizam tempo;</p>
                         <p>Websites com TypeScript customizados para VOCÊ;</p>
                     </div>
-                    <div id="hero_title_close"><h2>{"}"}</h2></div>
+                    <h2 className="text-4xl">{"}"}</h2>
                 </div>
             </div>
 
-            <div id="badges">
+            <div id="badges" className="flex flex-wrap items-center justify-center gap-8 py-4">
                 {badges.map(
                     (badge) => (
-                        <div key={badge.id} className={"badge " + badge.Txt}><badge.Icon></badge.Icon></div>
+                        <div key={badge.id} className={"badge text-4xl " + badge.Txt}><badge.Icon></badge.Icon></div>
                     )
                 )}
             </div>
 
-            <div id="cta">
-                <div id="download_curriculum">
-                    <a href="/CURRICULO_IVAN_PEDRO.pdf">
-                        <button>Baixar_Currículo();</button>
-                    </a>
-                </div>
+            <div id="cta" className="flex p-4 gap-8">
+                <a href="/CURRICULO_IVAN_PEDRO.pdf">
+                    <button>Baixar_Currículo();</button>
+                </a>
 
-                <div id="make_contact">
-                    <a href="#Footer"> {/* PLACEHOLDER */}
-                        <button>Entrar_em_Contato();</button>
-                    </a>
-                </div>
+                <a href="#Footer"> {/* PLACEHOLDER */}
+                    <button>Entrar_em_Contato();</button>
+                </a>
             </div>
         </section>
     )

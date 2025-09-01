@@ -18,5 +18,4 @@ a, button{
 section{
     display: flex;
     flex-direction: column;
-    height: 87.5vh;
 }

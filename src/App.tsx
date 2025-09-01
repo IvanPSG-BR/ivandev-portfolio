@@ -10,7 +10,7 @@ export default function App() {
     return (
         <>
             <Header></Header>
-            <main className="flex flex-col">
+            <main className="flex flex-col gap-4">
                 <Hero></Hero>
             </main>
             <Footer></Footer>

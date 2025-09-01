@@ -11,9 +11,9 @@ export default function Footer() {
     ]
 
     return (
-        <footer id="Footer" className="flex">
+        <footer id="Footer" className="flex items-center justify-between gap-4 p-2">
             <div id="left_ftr">
-                <ul>
+                <ul className="flex items-center gap-4">
                     {brands.map(
                         ( brand ) => (
                             <li key={brand.id} className="brand w-[1rem] h-[1rem]">
@@ -21,12 +21,12 @@ export default function Footer() {
                             </li>
                         )
                     )}
-                    <li>
-                        <a href="https://www.workana.com/freelancer/25f3cde603f5a3dfb6d6155730b5ec41"><img src={workana_icon} alt="" className="w-[1.2rem] h-[auto]"/></a>
+                    <li key={3}>
+                        <a href="https://www.workana.com/freelancer/25f3cde603f5a3dfb6d6155730b5ec41"><img src={workana_icon} alt="" className="w-[1.2rem] h-[1rem]"/></a>
                     </li>
                 </ul>
             </div>
-            <div id="right_ftr">
+            <div id="right_ftr" className="text-xs">
                 <div><p>Todos os Direitos Reservados ©</p></div>
                 <div><p>Ivan Pedro S. Gonçalves - 2025</p></div>
             </div>
