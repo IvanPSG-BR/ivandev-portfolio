@@ -1,7 +1,7 @@
 import { IconType } from 'react-icons';
 
-export type IconText = {
-    id: number;
-    Icon: IconType;
-    Txt: string;
+export type IconProps = {
+    key: number;
+    IconImg: IconType;
+    className: string;
 }

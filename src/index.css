@@ -9,6 +9,7 @@
 body {
     background-color: #06090e;
     color: #eeede6;
+    overflow-x: hidden;
 }
 
 a, button{
@@ -18,4 +19,5 @@ a, button{
 section{
     display: flex;
     flex-direction: column;
+    padding-block: 0.5rem;
 }
